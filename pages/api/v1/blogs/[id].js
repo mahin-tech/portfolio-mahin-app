@@ -3,8 +3,12 @@ import auth0 from '@/utils/auth0';
 
 export default async function handleBlog(req, res) {
     if (req.method === 'GET') {
-        const json = await new BlogApi().getById(req.query.id);
-        return res.json(json.data);
+        try {
+            const json = await new BlogApi().getById(req.query.id);
+            return res.json(json.data);
+        } catch (e) {
+            return res.status(e.status || 422).json(e.response.data);
+        }
     }
 
     if (req.method === 'PATCH') {
