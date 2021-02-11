@@ -44,7 +44,7 @@ const Index = () => {
                         <div className="hero-section-content">
                           <h2> MERN Stack Web Developer </h2>
                           <div className="hero-section-content-intro">
-                            Have a look at my portfolio and job history.
+                            Have a look at my portfolio and job details.
                           </div>
                         </div>
                       </div>
