@@ -34,7 +34,7 @@ const About = () => {
                         <div className={`${createFadeInClass()}`}>
                             <p>My name is Mahin Prajapati and I am a web developer. </p>
                             <p>
-                                I have a Master's degree in IT Services and one year of experience working
+                                I have a Master's degree in Computer Application and one year of experience working
                                 on a wide range of technologies and projects development for web applications in React
                                 and PHP.
                             </p>
